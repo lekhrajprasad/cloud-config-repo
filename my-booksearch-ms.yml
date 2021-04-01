@@ -51,4 +51,4 @@ logging:
 #Below message just to test whether Cloud Bus working or not        
 booksearch:
     cloudconfig:
-        msgupdated: Book Serach Default Message Update 1.0!!
+        msgupdated: Book Serach Default Message Update 1.1!!
