@@ -1,0 +1,42 @@
+management:
+    security:
+        enabled: false
+    endpoints:
+        web:
+            exposure:
+                include: '*' #Enabling actuator endpoint
+spring:
+    boot.admin.client.url: http://localhost:5555 #Boot Admin configuration, Actuator Admin is running on port 8080
+    datasource:
+        hikari:
+            connectionTimeout: 20000
+            maximumPoolSize: 5
+        password: lpras 
+        url: "jdbc:mysql://localhost:3306/mybookpricedb"
+        username: lpras
+    jpa:
+        show-sql: true
+        hibernate.ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+    application:
+        name: my-bookprice-ms
+eureka:
+    client:
+        service-url:
+            default-zone: http://localhost:8761/eureka
+        healthcheck:
+            enabled: true
+
+logging:
+    level:
+        root: WARN
+        com.lpras: DEBUG
+        de.codecentric: WARN
+    pattern:
+        console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
+bookprice:
+    cloudconfig:
+        msgupdated: Book Serach Default Message Update 1.1!!
+
