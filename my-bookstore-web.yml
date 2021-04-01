@@ -1,4 +1,6 @@
 management:
+    security:
+        enabled: false
     endpoints:
         web:
             exposure:
@@ -11,8 +13,6 @@ spring:
     rabbitmq:
       addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
     main:      allow-bean-definition-overriding: false
-server:
-    port: 5000
 
 
 hystrix:
@@ -41,3 +41,8 @@ logging:
         de.codecentric: WARN
     pattern:
         console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
+
+#Below message just to test whether Cloud Bus working or not        
+bookstore:
+    cloudconfig:
+        msgupdated: Book Serach Default Message Update 1.0!!
