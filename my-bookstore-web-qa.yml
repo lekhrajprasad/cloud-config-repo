@@ -45,4 +45,4 @@ logging:
 #Below message just to test whether Cloud Bus working or not        
 bookstore:
     cloudconfig:
-        msgupdated: Book Serach Default Message Update 1.1!!
+        msgupdated: Book Serach Default Message Update 1.2!!
