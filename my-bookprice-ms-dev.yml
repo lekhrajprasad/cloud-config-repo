@@ -33,7 +33,7 @@ eureka:
 
 logging:
     level:
-        root: WARN
+        root: DEBUG
         com.lpras: DEBUG
         de.codecentric: WARN
     pattern:
