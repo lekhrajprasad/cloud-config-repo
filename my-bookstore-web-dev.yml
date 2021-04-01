@@ -6,12 +6,13 @@ management:
             exposure:
                 include: '*' #Enabling actuator endpoint
 spring:
+    # RabbitMQ Properties
+    rabbitmq:
+        addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
     boot.admin.client.url: http://localhost:5555 #Boot Admin configuration, Actuator Admin is running on port 8080
     application:
         name: my-bookstore-web
-    # RabbitMQ Properties
-    rabbitmq:
-      addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
+    
     main:      allow-bean-definition-overriding: false
 
 
