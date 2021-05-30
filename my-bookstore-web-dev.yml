@@ -10,12 +10,17 @@ spring:
     rabbitmq:
         addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
     #boot.admin.client.url: http://localhost:5555 #Boot Admin configuration, Actuator Admin is running on port 8080, either use springboot admin client or eureka client not both
-    application:
-        name: my-bookstore-web
+    #application:
+     #   name: my-bookstore-web
     
     main:      allow-bean-definition-overriding: false
 
-
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8762/eureka
+        healthcheck:
+            enabled: true
 hystrix:
     command:
         my-bookprice-ms:
@@ -35,11 +40,11 @@ hystrix:
                         timeoutInMilliseconds: 500000     
 logging:
     level:
-        root: DEBUG
-        com.lpras: INFO
-        org.springframework.cloud: INFO
-        com.netflix: INFO
-        de.codecentric: INFO
+        root: ERROR
+        #com.lpras: INFO
+        #org.springframework.cloud: INFO
+        #com.netflix: INFO
+        #de.codecentric: INFO
     pattern:
         console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
 
