@@ -35,10 +35,10 @@ hystrix:
 logging:
     level:
         root: WARN
-        com.lpras: DEBUG
-        org.springframework.cloud: DEBUG
-        com.netflix: WARN
-        de.codecentric: WARN
+        #com.lpras: DEBUG
+        #org.springframework.cloud: DEBUG
+        #com.netflix: WARN
+        #de.codecentric: WARN
     pattern:
         console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
 
