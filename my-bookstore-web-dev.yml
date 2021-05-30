@@ -35,7 +35,7 @@ hystrix:
                         timeoutInMilliseconds: 500000     
 logging:
     level:
-        root: INFO
+        root: DEBUG
         com.lpras: INFO
         org.springframework.cloud: INFO
         com.netflix: INFO
