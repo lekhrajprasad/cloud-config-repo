@@ -23,13 +23,13 @@ spring:
         properties:
             hibernate:
                 format_sql: true
-    application:
-        name: my-booksearch-ms
+    #application:
+     #   name: my-booksearch-ms
 
 eureka:
     client:
         service-url:
-            default-zone: http://localhost:8761/eureka
+            defaultZone: http://localhost:8762/eureka
         healthcheck:
             enabled: true
             
@@ -43,7 +43,7 @@ hystrix:
 
 logging:
     level:
-        root: ERROR
+        root: DEBUG
         com.lpras: DEBUG
         de.codecentric: ERROR
     pattern:
