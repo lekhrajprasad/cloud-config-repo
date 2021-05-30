@@ -10,8 +10,8 @@ spring:
     rabbitmq:
         addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
     #boot.admin.client.url: http://localhost:5555 #Boot Admin configuration, Actuator Admin is running on port 8080, either use springboot admin client or eureka client not both
-    #application:
-     #   name: my-bookstore-web
+    application:
+        name: my-bookstore-web
     
     main:      allow-bean-definition-overriding: false
 
