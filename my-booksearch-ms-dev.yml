@@ -43,7 +43,7 @@ hystrix:
 
 logging:
     level:
-        root: DEBUG
+        root: ERROR
         com.lpras: DEBUG
         de.codecentric: ERROR
     pattern:
